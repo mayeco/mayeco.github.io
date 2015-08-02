@@ -5,7 +5,9 @@ layout: default
 <header class="masthead">
     <h1 class="masthead-title">
         <a href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
-        <small>• <a href="{{ site.baseurl }}/{{ site.about.url }}">{{ site.about.title }}</a></small>
+        {% if site.about.title and site.about.url %}
+            <small>• <a href="{{ site.baseurl }}/{{ site.about.url }}">{{ site.about.title }}</a></small>
+        {% endif %}
     </h1>
 </header>
 

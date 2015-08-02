@@ -48,14 +48,5 @@ author:
   google_plus:    MarioYoungURL
   github:         mayeco
 
-about:
-  url: quien-soy.html
-  title: quien soy
-
-# Google Analytics
-# !! Current Tracking ID only for maye.co !!
-google_analytics_id: "UA-48934522-1"
-# !!
-
 # Compress HTML
 compress_html: true
