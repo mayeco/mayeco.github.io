@@ -8,6 +8,5 @@ layout: null
 
 User-agent: *
 Disallow:
-Disallow: /page
-Disallow: /search
+Disallow: /page/
 Sitemap: {{ site.url }}/sitemap.xml
