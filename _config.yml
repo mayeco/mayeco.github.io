@@ -26,7 +26,7 @@ gems:
 # Handling reading
 exclude:
   - README.md
-  - LICENSE.md
+  - LICENSE
   - CNAME
 
 markdown:       kramdown
