@@ -49,4 +49,4 @@ author:
   github:         mayeco
 
 # Compress HTML
-compress_html: true
+# compress_html: true
