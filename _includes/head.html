@@ -8,7 +8,7 @@
   <title>
     {% if page.seo.title %}
       {{ page.seo.title | markdownify | strip_html | strip_newlines }}
-    {% else %}
+    {% elsif page.title %}
       {{ page.title | markdownify | strip_html | strip_newlines }} · {{ site.title }}
     {% endif %}
   </title>
