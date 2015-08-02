@@ -5,18 +5,20 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    {% if page.seo.title %}
-      {{ page.seo.title | markdownify | strip_html | strip_newlines }}
-    {% elsif page.title %}
-      {{ page.title | markdownify | strip_html | strip_newlines }} · {{ site.title }}
-    {% endif %}
-  </title>
+
+  {% capture title %}{% if page.seo.title %}{{ page.seo.title | markdownify | strip_html | strip_newlines }}{% elsif page.title %}{{ page.title | markdownify | strip_html | strip_newlines }} · {{ site.title }}{% endif %}{% endcapture %}
+
+  <title>{{ title }}</title>
+  <meta name="title" content="{{ title }}">
 
   {% if page.seo.description %}
     <meta name="description" content="{{ page.seo.description | markdownify | strip_html | strip_newlines }}">
   {% elsif post.excerpt %}
     <meta name="description" content="{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }} · {{ site.title }}">
+  {% endif %}
+
+  {% if page.seo.robots %}
+    <meta name="robots" content="{{ page.seo.robots }}">
   {% endif %}
 
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
