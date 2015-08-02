@@ -11,6 +11,46 @@ layout: default
     </h1>
 </header>
 
-<main>
+<article class="index">
+
     {{ content }}
-</main>
+
+</article>
+
+<hr />
+
+<div class="posts">
+    {% for post in paginator.posts %}
+    <article class="post">
+        <h2 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{% if post.display_title %}
+                {{ post.display_title }}
+                {% else %}
+                {{ post.title }}
+                {% endif %}</a>
+        </h2>
+
+        <div class="post-data">
+            <time datetime="{{ post.date | date_to_xmlschema }}" title="{{ post.date | date: '%a, %b %-d, %Y' }}" class="post-date">{{ post.date | date_to_string }}</time>
+            •
+            <span class="read-time" title="{{ post.content | strip_html | number_of_words | append:' words'}}">
+              {% capture reading_time %}{{ post.content | strip_html | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}
+              {% if reading_time <= '1' %}
+                {{ 1 | append:' minute read' }}
+              {% else %}
+                {{ reading_time | append:' minutes read' }}
+              {% endif %}
+            </span>
+        </div>
+
+        <p>{% if post.description %}
+            {{ post.description | markdownify | strip_html | strip_newlines }}
+            {% else %}
+            {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
+            {% endif %}</p>
+
+    </article>
+    {% endfor %}
+</div>
+
+{% include index_pager.html %}
