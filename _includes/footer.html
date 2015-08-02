@@ -1,0 +1,44 @@
+<footer class="footer">
+
+    <ul class="list-inline">
+        {% if site.author.twitter %}
+        <li>
+            <a rel="me" href="//twitter.com/{{ site.author.twitter }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.author.google_plus %}
+        <li>
+            <a rel="me" href="//google.com/+{{ site.author.google_plus }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.author.github %}
+        <li>
+            <a rel="me" href="//github.com/{{ site.author.github }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+
+    <small>
+        &copy;
+        <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>
+        . <a rel="nofollow" href="//creativecommons.org/licenses/by/4.0/" title="Except where otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International license.">Some rights reserved</a>
+    </small>
+</footer>
+
+
+<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>

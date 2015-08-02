@@ -1,0 +1,73 @@
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+
+.page,
+.post {
+  margin-bottom: 2em;
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+
+.post-title a:focus, .post-title a:hover {
+    color: #0084b4;
+}
+
+.page-title,
+.post-title {
+  margin-top: 0;
+    margin-right: 6rem;
+}
+
+.page-title {
+  
+  margin-bottom: 1rem;
+}
+
+.post-data{
+
+  // Meta data line below post title
+  
+  font-size:0.9rem;
+  
+  margin-top: -.3rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+
+}
+
+
+
+.post-meta {
+
+    margin-top: 2rem;
+    color: #999;
+    font-style: italic;
+    
+    .label {
+      display: inline-block;
+      padding: .5rem;
+      font-weight: 700;
+      font-size:0.7rem;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+
+      margin-right: 1rem;
+      border-radius: .3rem;
+      margin-bottom: 1rem;
+    
+      > a {
+        color: #fff;
+      }
+
+    }
+    
+}

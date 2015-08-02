@@ -1,0 +1,101 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+  max-width: 50rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #fbfbfb;
+  position: relative;
+}
+
+footer {
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+  text-align: center;
+
+  > li {
+    display: inline-block;
+    padding-right: .3rem;
+    padding-left: .3rem;
+
+    a {
+
+      color: #404040;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+
+    }
+
+    a:hover {
+      color: #268bd2;
+    }
+
+  }
+
+}
+
+.black-icons {
+
+  a {
+
+    color: #404040;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+
+  }
+
+  a:hover {
+    color: #268bd2;
+  }
+
+}
+
+.top-menu {
+
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+
+  .fa {
+
+    margin-right: 1rem;
+
+  }
+}
+
+.single {
+
+  padding-top: 2rem;
+
+}
+
+.emoji {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  display: inline-block;
+  max-width: none;
+  vertical-align: middle;
+}
+
+.text-center {
+
+  text-align: center;
+
+}

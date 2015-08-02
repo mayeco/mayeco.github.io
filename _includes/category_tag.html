@@ -1,0 +1,32 @@
+
+{% assign category_content = '' %}
+{% if page.category %}
+  {% for site_category in site.data.categories %}
+    {% if site_category.slug == page.category %}
+      {% assign category = site_category %}
+    {% endif %}
+  {% endfor %}
+  {% if category %}
+    {% capture category_content %}<span class="label" style="background-color:{{ category.color }}"><a href="{{ site.baseurl }}/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+  {% endif %}
+{% endif %}
+
+{% if page.tags.size > 0 %}
+  {% for post_tag in page.tags %}
+    {% for data_tag in site.data.tags %}
+      {% if data_tag.slug == post_tag %}
+        {% assign tag = data_tag %}
+      {% endif %}
+    {% endfor %}
+    {% if tag %}
+      {% capture tags_content_temp %}{{ tags_content }}<span class="label" style="background-color:{{ tag.color }}"><a href="{{ site.baseurl }}/{{ tag.slug }}/">{{ tag.name }}</a></span>{% endcapture %}
+      {% assign tags_content = tags_content_temp %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% assign tags_content = '' %}
+{% endif %}
+
+{% if category_content != empty or tags_content != empty %}
+  <p class="post-meta">{{ category_content }} {{ tags_content }}</p>
+{% endif %}

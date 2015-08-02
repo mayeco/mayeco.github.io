@@ -1,0 +1,62 @@
+# Permalinks
+permalink:           none
+relative_permalinks: true
+
+# Setup
+title:               Mario Young
+tagline:
+paginate:            20
+paginate_path:       "page/:num"
+baseurl:             ""
+assets:              assets
+
+# URL of site, include http://, do not include a trailing slash
+url: "mayeco.github.io"
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+gems:
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+
+# Handling reading
+exclude:
+  - README.md
+  - LICENSE.md
+  - CNAME
+
+markdown:       kramdown
+markdown_ext:   markdown,mkd,mkdn,md
+highlighter:    pygments
+
+collections:
+  my_collection:
+    output: true
+
+github:
+  repository_url: https://github.com/mayeco/mayeco.github.io
+  branch: master
+
+author:
+  name:           Mario Young
+  uri:            "https://twitter.com/mayeco"
+  twitter:        mayeco
+  google_plus:    MarioYoungURL
+  github:         mayeco
+
+about:
+  url: quien-soy.html
+  title: quien soy
+
+# Google Analytics
+# !! Current Tracking ID only for maye.co !!
+google_analytics_id: "UA-48934522-1"
+# !!
+
+# Compress HTML
+compress_html: true

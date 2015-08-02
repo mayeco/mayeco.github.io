@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="category single">
+  <h1 class="post-title category-title">{{ page.title }}</h1>
+  {% include home_icon.html %}
+
+  {{ content }}
+</article>
+
+<hr />
+
+<div class="posts">
+  {% for post in site.tags[page.cat_id] %}
+  <article class="post">
+    <h2 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">{% if post.display_title %}
+            {{ post.display_title }}
+          {% else %}
+            {{ post.title }}
+          {% endif %}</a>
+    </h2>
+
+    <time datetime="{{ post.date | date_to_xmlschema }}" title="{{ page.date | date: '%a, %b %-d, %Y' }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+    <p>{% if post.description %}
+      {{ post.description | markdownify | strip_html | strip_newlines }}
+    {% else %}
+      {{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}
+    {% endif %}</p>
+
+  </article>
+  {% endfor %}
+</div>
