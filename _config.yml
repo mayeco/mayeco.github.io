@@ -5,13 +5,13 @@ relative_permalinks: true
 # Setup
 title:               Mario Young
 tagline:
-paginate:            20
+paginate:            10
 paginate_path:       "page/:num"
 baseurl:             ""
 assets:              assets
 
 # URL of site, include http://, do not include a trailing slash
-url: "mayeco.github.io"
+url: "https://mayeco.github.io"
 
 sass:
   sass_dir:          _sass
