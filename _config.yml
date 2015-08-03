@@ -8,7 +8,7 @@ tagline:
 paginate:            10
 paginate_path:       "page/:num"
 baseurl:             ""
-assets:              assets
+assets:              "/assets"
 
 # URL of site, include http://, do not include a trailing slash
 url: "http://maye.co"
