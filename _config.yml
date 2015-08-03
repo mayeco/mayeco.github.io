@@ -11,7 +11,7 @@ baseurl:             ""
 assets:              assets
 
 # URL of site, include http://, do not include a trailing slash
-url: "https://mayeco.github.io"
+url: "http://maye.co"
 
 sass:
   sass_dir:          _sass
@@ -49,4 +49,4 @@ about:
   url: info/
 
 # Compress HTML
-# compress_html: true
+compress_html: true
