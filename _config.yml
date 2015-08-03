@@ -46,7 +46,7 @@ author:
 
 about:
   title: más sobre mí.
-  url: info/
+  url: info.html
 
 # Compress HTML
 compress_html: true

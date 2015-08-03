@@ -4,7 +4,8 @@ title: más sobre mí
 seo:
   title: más sobre mí
   description: más sobre mí
-permalink: /info/
+redirect_from:
+  - /info/
 ---
 
 Me llamo Mario Young (foto), soy Colombo-Panameño, nacido en Bogotá, he vivido en Bogotá, Colombia, Ciudad de Panamá, Panamá y llevo unos meses viviendo en Santiago de Chile.
