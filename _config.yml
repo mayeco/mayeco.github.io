@@ -33,10 +33,6 @@ markdown:       kramdown
 markdown_ext:   markdown,mkd,mkdn,md
 highlighter:    pygments
 
-collections:
-  my_collection:
-    output: true
-
 github:
   repository_url: https://github.com/mayeco/mayeco.github.io
   branch: master
@@ -47,6 +43,10 @@ author:
   twitter:        mayeco
   google_plus:    MarioYoungURL
   github:         mayeco
+
+about:
+  title: más sobre mí.
+  url: info/
 
 # Compress HTML
 # compress_html: true
