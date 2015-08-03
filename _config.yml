@@ -39,6 +39,7 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
+  - Gemfile
 
 markdown:       kramdown
 markdown_ext:   markdown,mkd,mkdn,md
