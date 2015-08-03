@@ -14,4 +14,4 @@ Mi mayor logro es la llegada de mi hijito (foto) y conseguir que su madre (foto)
 
 Me gusta las buenas series de tv, el cine y el rock de los setentas/ochentas.
 
-![Familia Young Baquero]({{ site.assets | prepend: site.baseurl }}/familia-young-baquero.jpg)
+![Familia Young Baquero]({{ site.uploads | prepend: site.baseurl }}/familia-young-baquero.jpg)

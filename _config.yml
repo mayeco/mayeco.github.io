@@ -4,34 +4,12 @@ relative_permalinks: true
 
 # Setup
 title:               Mario Young
-tagline:
 paginate:            10
 paginate_path:       "page/:num"
 baseurl:             ""
 assets:              "/assets"
-
-# URL of site, include http://, do not include a trailing slash
-url: "http://maye.co"
-
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-gems:
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jemoji
-
-# Handling reading
-exclude:
-  - README.md
-  - LICENSE
-  - CNAME
-
-markdown:       kramdown
-markdown_ext:   markdown,mkd,mkdn,md
-highlighter:    pygments
+uploads:             "/uploads"
+url:                 "http://maye.co"
 
 github:
   repository_url: https://github.com/mayeco/mayeco.github.io
@@ -47,6 +25,25 @@ author:
 about:
   title: más sobre mí.
   url: info.html
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+gems:
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+
+markdown:       kramdown
+markdown_ext:   markdown,mkd,mkdn,md
+highlighter:    pygments
 
 # Compress HTML
 compress_html: true
