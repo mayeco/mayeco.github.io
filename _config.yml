@@ -49,4 +49,4 @@ about:
   url: info/
 
 # Compress HTML
-# compress_html: true
+compress_html: true
