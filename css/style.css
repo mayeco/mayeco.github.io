@@ -1,6 +1,4 @@
 body {
-	margin: 0;
-	padding: 0;
 	background-color: #fff;
 	font-size: 12px;
 	font-family: "source-sans-pro", sans-serif;
@@ -8,7 +6,7 @@ body {
 	color: #444444;
 	min-height: 29.7cm;
 	margin: 1cm auto;
-	padding: 20px 50px;
+	padding: 0px 50px;
 	min-width: 970px;
 }
 * {
@@ -176,6 +174,7 @@ ul.skills li:last-child {
 		background: initial;
 		page-break-after: always;
 		font-size: 12pt;
+		padding: 20px 50px;
 	}
 	.page-break {
 		page-break-before: always;
