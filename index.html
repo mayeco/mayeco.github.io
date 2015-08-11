@@ -1,10 +1,194 @@
 ---
-layout: index
-title: Homepage
-seo:
-  title: programador web y consultor seo
-  description: Programador, consultor seo, especialista en usabilidad y administración de servidores.
+redirect_from:
+ - /info/
+ - /info.html
+ - /
 ---
 
-{% capture homepage %}{% include homepage.md %}{% endcapture %}
-{{ homepage | markdownify }}
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mario Young - Resume</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link href='//fonts.googleapis.com/css?family=Merriweather:400,300,900italic,900,700italic,700,400italic,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+	<body>
+
+		<div class="container-fluid">
+
+			<div class="section row margin-double">
+				<div class="col-xs-2 col-md-2 hidden-print">
+					<img class="img-thumbnail img-rounded img-responsive" src="https://pbs.twimg.com/profile_images/574725474909224960/YY57_Sqy.jpeg">
+				</div>
+				<div class="col-xs-10 col-md-10">
+					<h1>
+						<strong>Mario</strong> Young</h1>
+					<div class="contact-info hidden-print">
+						<p><i class="fa fa-location-arrow"></i> <a href="https://en.wikipedia.org/wiki/Santiago">Santiago, Chile</a></p>
+						<p><i class="fa fa-phone"></i> <a href="tel:+56967882348">+56 9 6788 2348</a></p>
+						<p><i class="fa fa-google"></i> <a href="mailto:maye.co@gmail.com">maye.co@gmail.com</a></p>
+						<p><i class="fa fa-skype"></i> <a href="skype:maye.co?add">maye.co</a></p>
+					</div>
+					<div class="contact-info visible-print-block">
+						<p>Phone: +56 9 6788 2348</p>
+						<p>Email: maye.co@gmail.com</p>
+						<p>Skype: maye.co</p>
+						<p>Location: Santiago, Chile</p>
+						<p>Website: http://maye.co</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section row">
+				<div class="col-xs-2 col-md-2 section-title">
+					<h2>Interests</h2>
+				</div>
+				<div class="col-xs-10 col-md-10 section-text">
+					<span class="key">Search Engine Optimization / Marketing</span>
+					<span class="key">Microservices Architecture</span>
+					<span class="key">Free Software / Open Source Software</span>
+					<span class="key">Cluster Computing</span>
+					<span class="key">User Experience / Usability</span>
+				</div>
+			</div>
+
+			<div class="section row">
+				<div class="col-xs-2 col-md-2 section-title">
+					<h2>Skills</h2>
+				</div>
+				<div class="col-xs-10 col-md-10 section-text">
+					<div class="row">
+						<ul class="skills col-xs-4 col-md-4">
+							<li><i class="fa fa-check hidden-print"></i> PHP, C++, Go</li>
+							<li><i class="fa fa-check hidden-print"></i> Javascript, nodejs, gulp</li>
+							<li><i class="fa fa-check hidden-print"></i> Symfony, Doctrine</li>
+							<li><i class="fa fa-check hidden-print"></i> HTML5, CSS3, SASS</li>
+							<li><i class="fa fa-check hidden-print"></i> Linode, Digital Ocean</li>
+						</ul>
+						<ul class="skills col-xs-4 col-md-4">
+							<li><i class="fa fa-check hidden-print"></i> Qt, KDE Libs</li>
+							<li><i class="fa fa-check hidden-print"></i> Docker, Tutum</li>
+							<li><i class="fa fa-check hidden-print"></i> Google Cloud</li>
+							<li><i class="fa fa-check hidden-print"></i> Nginx, Apache</li>
+							<li><i class="fa fa-check hidden-print"></i> TYPO3, Wordpress</li>
+						</ul>
+						<ul class="skills col-xs-4 col-md-4">
+							<li><i class="fa fa-check hidden-print"></i> MySQL, MongoDB</li>
+							<li><i class="fa fa-check hidden-print"></i> jQuery, bower, Bootstrap</li>
+							<li><i class="fa fa-check hidden-print"></i> Memcached, Redis, Solr</li>
+							<li><i class="fa fa-check hidden-print"></i> Amazon AWS</li>
+							<li><i class="fa fa-check hidden-print"></i> git, svn</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-md-2 section-title">
+					<h2>Experience</h2>
+				</div>
+				<div class="col-xs-10 col-md-10 section-text">
+					<h3>Swiss Panama Group, Corp.</h3>
+					<div class="row subsection">
+						<div class="emph col">Full Stack Developer</div>
+						<div class="col-right light">January 2011 — June 2012</div>
+					</div>
+					<ul class="desc">
+						<li>I made the statistical application, mobile and SmartTV version, many improvements in usability, application in C++ with Qt for printing Freshbooks invoices in POS printers.</li>
+						<li>Rresponsible for managing 4 VPS servers on GoGrid and 2 ads servers with OpenX in a redundant environment.</li>
+						<li>Create a content module in TYPO3 for SEO, I made many Symfony plugins for SPAM, backend tools, email tools with SendGrid, integration with payment systems and the design for the user account, and the publish ads pages.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-md-2">
+				</div>
+				<div class="col-md-offset-2 col-sx-offset-2 col-xs-10 col-md-10 section-text">
+					<h3>Geo Solutions Consulting</h3>
+					<div class="row subsection">
+						<div class="emph col">Software Engineer</div>
+						<div class="col-right light">November 2006 — December 2011</div>
+					</div>
+					<ul class="desc">
+						<li>Responsible for the handling, storage and backup of data (images, maps, orthophotos, applications, etc.).</li>
+						<li>Technical requirements, installation, maintenance and customer support of the <b>Google Earth Enterprise</b> system for the Ministry of Agriculture of Panama</li>
+						<li>Conducted technical training and system presentation to the Ministry of Education, Ministry of Water and Sewerage, Environmental Authority, and Secretary of the Presidency of Panama.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-md-2">
+				</div>
+				<div class="col-md-offset-2 col-sx-offset-2 col-xs-10 col-md-10 section-text">
+					<h3>GFK Marketing Group</h3>
+					<div class="row subsection">
+						<div class="emph col">System Administrator</div>
+						<div class="col-right light">August 2005 — September 2006</div>
+					</div>
+					<ul class="desc">
+						<li>Development of forms for data capture in CATI platform, a IBM software. Certified by SPSS Mexico</li>
+						<li>Installation, Support and Maintenance of the capture system</li>
+						<li>Made a training and system installation in Guatemala.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section row">
+				<div class="col-xs-2 col-md-2">
+				</div>
+				<div class="col-md-offset-2 col-sx-offset-2 col-xs-10 col-md-10 section-text">
+					<h3>Diseño de Soluciones e.u.</h3>
+					<div class="row subsection">
+						<div class="emph col">Software Developer</div>
+						<div class="col-right light">March 2003 — February 2005</div>
+					</div>
+					<ul class="desc">
+						<li>Developer of Visual Basic 6 and Visual C++ for civil engineering software DC-CAD and DL-NET</li>
+						<li>Videos of presentations software and website design</li>
+						<li>Create a antipiracy aplication in Visual Basic.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-md-2 section-title">
+					<h2>Education</h2>
+				</div>
+				<div class="col-xs-10 col-md-10 section-text">
+					<h3>Ingeniería de Sistemas, Computer Science</h3>
+					<div>Universidad Interamericana de Panamá</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-md-2 section-title">
+				</div>
+				<div class="col-xs-10 col-md-10 section-text">
+					<h3>Publicidad y Mercado, Marketing</h3>
+					<div>Universidad Nacional de Panamá</div>
+				</div>
+			</div>
+
+			<div class="section row">
+				<div class="col-xs-2 col-md-2 section-title">
+				</div>
+				<div class="col-xs-10 col-md-10 section-text">
+					<h3>Certified Computer Professional</h3>
+					<div>APTECH Computer Education</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
