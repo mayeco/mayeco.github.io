@@ -35,17 +35,17 @@ layout: default
 
   </article>
 
-{% if page.nocategory == null %}
+{% if page.extras.nocategory == null %}
   {% include category_tag.html %}
 {% endif %}
 
-{% if page.norelated == null %}
+{% if page.extras.norelated == null %}
   {% include related_post.html %}
 {% endif %}
 
 </div>
 
-{% if page.nofooter == null %}
+{% if page.extras.nofooter == null %}
   {% include footer.html %}
 {% endif %}
 

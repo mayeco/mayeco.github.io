@@ -62,26 +62,41 @@ tbody tr:nth-child(odd) th {
 
 .archive {
 
-  li {
-
-    margin-left: 4rem;
-
-  }
-
   h1 {
     font-weight: bold;
     font-style: italic;
-    font-size: 40px;
+    font-size: 5rem;
     color: #35393a;
     padding-bottom: 10px;
     font-family: 'merriweather', sans-serif;
   }
 
-  h2 {
+  .post-list {
 
-    font-weight: 300;
-    font-style: italic;
-    font-family: 'merriweather', sans-serif;
+    padding-right:40px;
+
+    h2 {
+
+      font-weight: 300;
+      font-style: italic;
+      font-family: 'merriweather', sans-serif;
+
+    }
+
+    li {
+
+      margin-left: 4rem;
+
+
+      h3 {
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+      }
+
+    }
 
   }
 
@@ -91,7 +106,7 @@ tbody tr:nth-child(odd) th {
     color: #999;
     font-style: italic;
     font-size:14px;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 
     .post-taxonomies {
 
