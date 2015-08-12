@@ -19,10 +19,12 @@ layout: default
 <div class="container archive">
 
     <div class="row">
-      <div class="col-xs-12 col-md-12 text-left">
+      <header class="col-xs-12 col-md-12 text-left">
         <h1>{{ page.title }}</h1>
-      </div>
+      </header>
     </div>
+
+    {% include all_category_tags.html %}
 
     <div class="row">
       <div class="col-xs-12 col-md-12">
@@ -48,7 +50,6 @@ layout: default
     </ul>
       </div>
     </div>
-
 
 </div>
 

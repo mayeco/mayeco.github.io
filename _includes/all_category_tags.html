@@ -1,0 +1,30 @@
+{% if site.data.categories %}
+    {% for category in site.data.categories %}
+        {% capture category_content_temp %}{{ category_content }}<span class="label" style="background-color:{{ category.color }}"><a href="{{ site.baseurl }}/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+        {% assign category_content = category_content_temp %}
+    {% endfor %}
+{% else %}
+    {% assign category_content = '' %}
+{% endif %}
+
+
+{% if site.data.tags %}
+    {% for tag in site.data.tags %}
+        {% capture tags_content_temp %}{{ tags_content }}<span class="label" style="background-color:{{ tag.color }}"><a href="{{ site.baseurl }}/{{ tag.slug }}/">{{ tag.name }}</a></span>{% endcapture %}
+        {% assign tags_content = tags_content_temp %}
+    {% endfor %}
+{% else %}
+    {% assign tags_content = '' %}
+{% endif %}
+
+{% if category_content != empty or tags_content != empty %}
+<div class="row post-meta">
+    <div class="col-xs-12 col-md-12 post-taxonomies">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{ category_content }} {{ tags_content }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

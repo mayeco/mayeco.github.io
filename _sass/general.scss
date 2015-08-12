@@ -85,6 +85,37 @@ tbody tr:nth-child(odd) th {
 
   }
 
+
+  .post-meta {
+
+    color: #999;
+    font-style: italic;
+    font-size:14px;
+    margin-top: 1.5rem;
+
+    .post-taxonomies {
+
+      .label {
+
+        font-weight: 700;
+        font-size:14px;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        margin-right: 10px;
+
+        > a {
+          color: #fff;
+        }
+
+      }
+
+    }
+
+  }
+
+
 }
 
 .category {
