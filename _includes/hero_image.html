@@ -1,4 +1,4 @@
-<div class="jumbotron" style="background-image: url('{{ page.hero_image }}')">
+<div class="jumbotron" style="background-image: url('{{ site.assets | prepend: site.baseurl  | replace: '//', '/' }}/hero_images/{{ page.hero_image }}')">
     <div class="blackbg">
         <header class="text-center">
             <h1>{{ page.title }}</h1>
