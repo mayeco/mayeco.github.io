@@ -1,44 +1,39 @@
 ---
-layout: compress
 title: "Pagina No Encontrada"
 permalink: 404.html
 sitemap: false
+layout: default
+seo:
+  robots: noindex, follow
 ---
-
 <!doctype html>
 <html lang="en">
 
 <head>
 
   {% include head_meta.html %}
-
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-  <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,900italic,900,700italic,700,400italic,300italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/general.css">
 
 </head>
 
-  <body>
+<body>
 
-  <div class="container-fluid">
+<div class="container post">
 
-    <div class="section row margin-double">
+  <article class="row">
 
-      <div class="col-xs-12 col-md-12 text-center">
-        <h1>Pagina No Encontrada</h1>
-      </div>
-
-      <div class="col-xs-12 col-md-12 text-center">
-        {% include imgur.html  data-id='6UbUZdR' %}
-      </div>
-
+    <div class="col-xs-12 col-md-10 col-md-offset-1 text-center page-header">
+      <h1>{{ page.title }}</h1>
     </div>
 
-  </div>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 text-center render-content">
+      {% include imgur.html  data-id='6UbUZdR' %}
+    </div>
 
-  {% include footer_js.html %}
-  </body>
+  </article>
+
+</div>
+
+{% include footer_js.html %}
+</body>
 </html>

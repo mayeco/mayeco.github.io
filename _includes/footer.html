@@ -1,43 +1,22 @@
-<footer class="footer">
 
-    <ul class="list-inline">
-        {% if site.author.twitter %}
-        <li>
-            <a target="_blank" rel="me" href="//twitter.com/{{ site.author.twitter }}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-        </li>
-        {% endif %}
-        {% if site.author.google_plus %}
-        <li>
-            <a target="_blank" rel="me" href="//google.com/+{{ site.author.google_plus }}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-        </li>
-        {% endif %}
-        {% if site.author.github %}
-        <li>
-            <a target="_blank" rel="me" href="//github.com/{{ site.author.github }}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-        </li>
-        {% endif %}
-    </ul>
+<div class="container">
 
-    <small>
-        &copy;
-        <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> 
-        {{ site.author.name }} • <a target="_blank" rel="nofollow" href="//github.com/mayeco/mayeco.github.io#licencias">Algunos Derechos Reservados</a>
-    </small>
-</footer>
+    <div class="row">
 
-<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+
+            <footer class="footer">
+                <small>
+                    &copy;
+                    <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>
+                    <a href="{{ site.baseurl }}/">{{ site.author.name }}</a> • <a target="_blank" rel="nofollow" href="//github.com/mayeco/mayeco.github.io#licencias">Algunos Derechos Reservados</a><br/>
+                    <a href="{{ site.baseurl }}/blog.html">Blog Archives</a>
+                </small>
+            </footer>
+
+
+        </div>
+
+    </div>
+
+</div>

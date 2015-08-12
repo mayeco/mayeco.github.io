@@ -1,18 +1,42 @@
 ---
 layout: default
 ---
+<!doctype html>
+<html lang="en">
 
-<article class="page single">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {% include home_icon.html %}
+<head>
 
-  <div class="render-content">
-    {{ content }}
-  </div>
+    {% include head_meta.html %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/general.css">
 
-</article>
+</head>
+
+<body>
+
+<div class="container post">
+
+    <article class="row">
+
+        <header class="col-xs-12 col-md-8 col-md-offset-2 text-center page-header">
+            <h1>{{ page.title }}</h1>
+        </header>
+
+        <div class="col-xs-12 col-md-8 col-md-offset-2 render-content">
+            {{ content }}
+        </div>
+
+    </article>
+
+</div>
+
+{% if page.nofooter == null %}
+{% include footer.html %}
+{% endif %}
+{% include footer_js.html %}
 <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js" charset="utf-8"></script>
 <script>
     anchors.options.placement = 'left';
     anchors.add('.render-content h2, .render-content h3, .render-content h4, .render-content h5, .render-content h6');
 </script>
+</body>
+</html>

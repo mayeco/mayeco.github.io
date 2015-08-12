@@ -1,6 +1,6 @@
 ---
 layout: archives
-title: Archives
+title: Blog
 seo:
   robots: noindex, follow
 ---

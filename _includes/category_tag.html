@@ -1,4 +1,3 @@
-
 {% assign category_content = '' %}
 {% if page.category %}
   {% for site_category in site.data.categories %}
@@ -28,5 +27,13 @@
 {% endif %}
 
 {% if category_content != empty or tags_content != empty %}
-  <p class="post-meta">{{ category_content }} {{ tags_content }}</p>
+<div class="row post-meta">
+  <div class="col-xs-12 col-md-8 col-md-offset-2 post-taxonomies">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {{ category_content }} {{ tags_content }}
+      </div>
+    </div>
+  </div>
+</div>
 {% endif %}

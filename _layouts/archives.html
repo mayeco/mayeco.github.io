@@ -1,29 +1,56 @@
 ---
 layout: default
 ---
+<!doctype html>
+<html lang="en">
 
-<article class="archive single">
-  <h1 class="post-title category-title">{{ page.title }}</h1>
-  {% include home_icon.html %}
-</article>
+<head>
 
-<ul>
-  {% for post in site.posts %}
+    {% include head_meta.html %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/general.css">
 
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% endif %}
-    {% endunless %}
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
 
-    <li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{% if post.display_title %}
-      {{ post.display_title }}
-      {% else %}
-      {{ post.title }}
-      {% endif %}</a></li>
-  {% endfor %}
-</ul>
+</head>
+
+<body>
+
+<div class="container archive">
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12 text-left">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+    <ul>
+      {% for post in site.posts %}
+
+        {% unless post.next %}
+          <h2>{{ post.date | date: '%Y' }}</h2>
+        {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+            <h2>{{ post.date | date: '%Y' }}</h2>
+          {% endif %}
+        {% endunless %}
+
+        <li><h3><small>{{ post.date | date:"%b" }}</small> - <a href="{{ post.url }}">{% if post.display_title %}
+          {{ post.display_title }}
+          {% else %}
+          {{ post.title }}
+          {% endif %}</a></h3></li>
+      {% endfor %}
+    </ul>
+      </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: default
 title: "Resume"
 redirect_from:
 - /info/
@@ -11,14 +11,10 @@ redirect_from:
     <head>
 
         {% include head_meta.html %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/resume.css">
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-        <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,900italic,900,700italic,700,400italic,300italic'
-              rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/styles.css">
+        <!-- RSS -->
+        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
 
     </head>
 
@@ -29,7 +25,7 @@ redirect_from:
         <div class="section row margin-double">
             <div class="col-xs-2 col-md-2 hidden-print">
                 <img class="img-thumbnail img-rounded img-responsive"
-                     src="https://pbs.twimg.com/profile_images/574725474909224960/YY57_Sqy.jpeg">
+                     src="{{ site.uploads | prepend: site.baseurl  | replace: '//', '/' }}/mayeco.jpeg">
             </div>
             <div class="col-xs-10 col-md-10">
                 <h1>
@@ -64,11 +60,11 @@ redirect_from:
                 <h2>Interests</h2>
             </div>
             <div class="col-xs-10 col-md-10 section-text">
-                <span class="key">Search Engine Optimization / Marketing</span>
-                <span class="key">Microservices Architecture</span>
-                <span class="key">Free Software / Open Source Software</span>
-                <span class="key">Cluster Computing</span>
-                <span class="key">User Experience / Usability</span>
+                <span class="key"><span class="visible-print-inline">- </span>Search Engine Optimization / Marketing</span> <i class="fa hidden-print small fa-minus"></i>
+                <span class="key"><span class="visible-print-inline">- </span>Microservices Architecture</span> <i class="fa hidden-print small fa-linux"></i>
+                <span class="key"><span class="visible-print-inline">- </span>Free Software / Open Source Software</span> <i class="fa hidden-print small fa-minus"></i>
+                <span class="key"><span class="visible-print-inline">- </span>Cluster Computing</span> <i class="fa hidden-print small fa-minus"></i>
+                <span class="key"><span class="visible-print-inline">- </span>User Experience / Usability</span>
             </div>
         </div>
 
@@ -222,6 +218,5 @@ redirect_from:
 
     </div>
 
-    {% include footer_js.html %}
     </body>
 </html>
