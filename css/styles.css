@@ -4,7 +4,6 @@ body {
 	font-family: "source-sans-pro", sans-serif;
 	-webkit-font-smoothing: subpixel-antialiased;
 	color: #444444;
-	min-height: 29.7cm;
 	margin: 1cm auto;
 	padding: 0px 50px;
 	min-width: 970px;
@@ -159,6 +158,7 @@ ul.skills li:last-child {
 	border: 1px red solid;
 	height: 297mm;
 }
+
 @page {
 	size: A4;
 	margin: 0;
@@ -169,12 +169,12 @@ ul.skills li:last-child {
 		border: initial;
 		border-radius: initial;
 		width: initial;
-		min-height: initial;
 		box-shadow: initial;
 		background: initial;
 		page-break-after: always;
 		font-size: 12pt;
 		padding: 20px 50px;
+		min-height: 29.7cm;
 	}
 	.page-break {
 		page-break-before: always;

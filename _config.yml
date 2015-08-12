@@ -21,10 +21,6 @@ author:
   google_plus:    MarioYoungURL
   github:         mayeco
 
-about:
-  title: más sobre mí.
-  url: info.html
-
 sass:
   sass_dir:          _sass
   style:            :compressed

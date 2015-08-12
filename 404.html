@@ -1,10 +1,44 @@
 ---
-layout: page
+layout: compress
 title: "Pagina No Encontrada"
 permalink: 404.html
 sitemap: false
 ---
 
-<div class="text-center">
-  {% include imgur.html  data-id='6UbUZdR' %}
-</div>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  {% include head_meta.html %}
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,900italic,900,700italic,700,400italic,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+  <body>
+
+  <div class="container-fluid">
+
+    <div class="section row margin-double">
+
+      <div class="col-xs-12 col-md-12 text-center">
+        <h1>Pagina No Encontrada</h1>
+      </div>
+
+      <div class="col-xs-12 col-md-12 text-center">
+        {% include imgur.html  data-id='6UbUZdR' %}
+      </div>
+
+    </div>
+
+  </div>
+
+  {% include footer_js.html %}
+  </body>
+</html>
