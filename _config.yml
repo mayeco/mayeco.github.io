@@ -1,7 +1,5 @@
 # Permalinks
 permalink:           none
-relative_permalinks: true
-
 # Setup
 title:               Mario Young
 paginate:            10
