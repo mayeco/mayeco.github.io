@@ -37,7 +37,6 @@ exclude:
 
 markdown:       kramdown
 markdown_ext:   markdown,mkd,mkdn,md
-highlighter:    pygments
 
 # Compress HTML
 compress_html: true
