@@ -1,4 +1,4 @@
-[maye.co](http://maye.co) [![Build Status](https://travis-ci.org/mayeco/mayeco.github.io.png)](https://travis-ci.org/mayeco/mayeco.github.io)
+[maye.co](https://mayeco.github.io) [![Build Status](https://travis-ci.org/mayeco/mayeco.github.io.png)](https://travis-ci.org/mayeco/mayeco.github.io)
 ================
 
 ## Licencias
