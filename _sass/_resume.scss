@@ -98,7 +98,7 @@ a:hover {
 
 .section {
   border-bottom: 1px solid #ddd;
-  padding: 10px 0 15px;
+  padding: 20px 0 20px;
 }
 
 .section:last-child {
@@ -184,3 +184,10 @@ ul.skills li:last-child {
   font-size: 10pt;
 
 }
+
+
+.sectionnoborder {
+  border: 0;
+  padding-bottom: 0;
+}
+

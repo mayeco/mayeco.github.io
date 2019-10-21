@@ -1,7 +1,8 @@
 
 @page {
   size: A4;
-  margin: 0;
+  margin-top: 40pt;
+  margin-bottom: 10pt;
 }
 
 @media print {
@@ -13,9 +14,20 @@
     box-shadow: initial;
     background: initial;
     page-break-after: always;
-    font-size: 11pt;
+    font-size: 12pt;
     padding: 20px 40px;
     min-height: 29.7cm;
+  }
+  .header {
+    position: fixed;
+    top: 10pt;
+    width: 100%
+  }
+  .frowtop {
+    margin-top: 115px;
+  }
+  .frowtopbreak {
+    padding-top: 210pt;
   }
   .page-break {
     page-break-before: always;
@@ -45,7 +57,7 @@
     margin: 5px 0 0
   }
   .section {
-    padding: 5px 0 8px
+    padding: 15px 0 10px
   }
   .section-text {
     margin: 5px 0 5px;
@@ -71,3 +83,7 @@
 
 }
 
+.sectionnoborder {
+  border: 0;
+    padding-bottom: 0;
+}
